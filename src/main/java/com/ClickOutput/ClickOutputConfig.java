@@ -17,3 +17,4 @@ public interface ClickLoggerConfig extends Config
 	{
 		return "Clicked:";
 	}
+}
