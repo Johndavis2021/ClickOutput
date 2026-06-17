@@ -1,2 +1,2 @@
-# Example
-An example greeter plugin
+# Click Output
+Logs interaction text to chatbox with a customizable prefix
