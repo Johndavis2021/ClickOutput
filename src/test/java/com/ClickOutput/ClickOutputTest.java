@@ -7,7 +7,7 @@ public class ClickOutputTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(ClickOutputPlugin.class);
 		RuneLite.main(args);
 	}
 }

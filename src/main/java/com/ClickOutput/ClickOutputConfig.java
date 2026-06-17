@@ -5,7 +5,7 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("clicklogger")
-public interface ClickLoggerConfig extends Config
+public interface ClickOutputConfig extends Config
 {
 	@ConfigItem(
 			keyName = "prefixText",
@@ -15,6 +15,6 @@ public interface ClickLoggerConfig extends Config
 	)
 	default String prefixText()
 	{
-		return "Clicked:";
+		return "Click to minimize, logging action on target:";
 	}
 }

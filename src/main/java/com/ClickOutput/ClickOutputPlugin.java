@@ -13,22 +13,22 @@ import net.runelite.client.util.Text;
 import javax.inject.Inject;
 
 @PluginDescriptor(
-		name = "Click Logger",
+		name = "Click Output",
 		description = "Logs interaction text with a customizable prefix",
 		tags = {"debug", "ui", "logging"}
 )
-public class ClickLoggerPlugin extends Plugin
+public class ClickOutputPlugin extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private ClickLoggerConfig config;
+	private ClickOutputConfig config;
 
 	@Provides
-	ClickLoggerConfig getConfig(ConfigManager configManager)
+	ClickOutputConfig getConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ClickLoggerConfig.class);
+		return configManager.getConfig(ClickOutputConfig.class);
 	}
 
 	@Subscribe
