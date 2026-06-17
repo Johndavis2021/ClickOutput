@@ -15,6 +15,6 @@ public interface ClickOutputConfig extends Config
 	)
 	default String prefixText()
 	{
-		return "Click to minimize, logging action on target:";
+		return "Clicked:";
 	}
 }
