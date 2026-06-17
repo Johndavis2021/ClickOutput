@@ -4,16 +4,16 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ClickOutputConfig extends Config
+@ConfigGroup("clicklogger")
+public interface ClickLoggerConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+			keyName = "prefixText",
+			name = "Prefix Text",
+			description = "The message sent before the action name",
+			position = 1
 	)
-	default String greeting()
+	default String prefixText()
 	{
-		return "Hello";
+		return "Clicked:";
 	}
-}
